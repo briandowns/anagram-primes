@@ -19,7 +19,7 @@
 int unique_value(const char* word, size_t word_size) {
     int prod = 1;
     for (int i = 0; i < word_size; i++){
-        switch (word[i]){
+        switch (word[i]) {
             case 'a': prod *= 2; break;
             case 'b': prod *= 3; break;
             case 'c': prod *= 5; break;

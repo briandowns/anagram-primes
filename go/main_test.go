@@ -48,3 +48,15 @@ func BenchmarkIsAnagram(b *testing.B) {
 		isAnagram("silent", "listen")
 	}
 }
+
+func BenchmarkUniqNum2(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		isAnagram2("silent", "listen")
+	}
+}
+
+func BenchmarkUniqNum3(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		isAnagram3("silent", "listen")
+	}
+}
