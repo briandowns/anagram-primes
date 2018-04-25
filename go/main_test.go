@@ -60,3 +60,9 @@ func BenchmarkUniqNum3(b *testing.B) {
 		isAnagram3("protectional", "lactoprotein")
 	}
 }
+
+func BenchmarkUniqNum31(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		isAnagram3("etaoinsrhldcumfpgwybvkxjqz", "etaonisrhldcmufpgwybvkjxqz")
+	}
+}
