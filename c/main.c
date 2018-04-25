@@ -13,6 +13,8 @@
 /*
  * unique_value generates a unique value assinged to the 
  * word passed in based on the letters it contains.
+ * TODO(briandowns) reorder the cases in the switch block
+ * in order of occurance in english words
  */
 int unique_value(const char* word, size_t word_size) {
     int prod = 1;
