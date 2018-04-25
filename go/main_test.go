@@ -45,18 +45,18 @@ func TestIsAnagram(t *testing.T) {
 
 func BenchmarkIsAnagram(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		isAnagram("silent", "listen")
+		isAnagram("protectional", "lactoprotein")
 	}
 }
 
 func BenchmarkUniqNum2(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		isAnagram2("silent", "listen")
+		isAnagram2("protectional", "lactoprotein")
 	}
 }
 
 func BenchmarkUniqNum3(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		isAnagram3("silent", "listen")
+		isAnagram3("protectional", "lactoprotein")
 	}
 }
